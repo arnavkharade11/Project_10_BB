@@ -1,0 +1,13 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: proxima-nova, helvetica, arial,sans-serif;
+}
+
+/* Start of Header Part */
+
+.header_line {
+    height: 4px;
+    width: 100%;
+    background-color: rgb(101, 139, 30);
+}
