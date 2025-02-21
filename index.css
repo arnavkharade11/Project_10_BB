@@ -4,10 +4,62 @@
     font-family: proxima-nova, helvetica, arial,sans-serif;
 }
 
+body {
+    height: 100vh;
+}
+
 /* Start of Header Part */
 
 .header_line {
     height: 4px;
-    width: 100%;
+    width: 0;
     background-color: rgb(101, 139, 30);
+    position: fixed;
+    left: 50%;
+    animation: expand 1.5s ease-out forwards;
+}
+
+@keyframes expand {
+    0% {
+        width: 0;
+        left: 50%;
+    }
+    100% {
+        width: 100%;
+        left: 0;
+    }
+}
+
+.navbar {
+    width: 75%;
+    margin: auto;
+}
+
+.nav_parent_1 {
+    display: flex;
+}
+
+.nav_search {
+    display: flex;
+    border: 1px solid rgb(214, 214, 214);
+    width: 500px;
+    height: 24px;
+    margin: auto;
+    padding: 5px;
+}
+
+.search_icon {
+    width: 10px;
+    height: 15px;
+    margin: auto;
+    margin-left: 10px;
+}
+
+.searchbar {
+    border: none;
+}
+
+.bb_logo {
+    width: 8.0rem;
+    height: 7.25rem;
 }
